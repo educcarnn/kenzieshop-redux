@@ -1,5 +1,4 @@
-import { AddToCart, removeItem} from "./types";
+import { ADD, REMOVE } from "./types"
 
-export const add = (product) => ({type: AddToCart, product});
-export const remove = (id) => ({type: removeItem, id})
-
+export const add = (product) => ({type: ADD, product});
+export const remove = (id) => ({type: REMOVE, id})

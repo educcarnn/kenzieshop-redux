@@ -8,7 +8,7 @@ const initialProducts = [
     {name: "iPhone", price: 500.00, id: 3, image: iPhone}
 ]
 
-const productsReducer = (state = initialProducts, action) => {
+const productsReducer = (state = initialProducts) => {
     return state   
   };
   

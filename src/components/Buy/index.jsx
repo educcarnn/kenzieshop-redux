@@ -5,14 +5,14 @@ import { add } from "../../store/Modules/cart/actions";
 function Buy() {
   const products = useSelector(({products}) => products);
   const dispatch = useDispatch()
+  const items = (products) => {
 
-  const items = (products, index) => {
     return (
-      <li key={index}>
+      <li key={products.id}>
         <span>{products.name}</span>
         <span>{products.price}</span>
         <img src={products.image} alt={products.image}></img>
-        <button onClick={() => dispatch(add(products))}>Adicione ao carrinho</button>
+        <button onClick={() => dispatch(add(products))} >Adicione ao carrinho</button>
       </li>
     );
   };

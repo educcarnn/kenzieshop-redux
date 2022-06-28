@@ -1,2 +1,2 @@
-export const AddToCart = "@cart/Add"
-export const removeItem = "@cart/Remove"
+export const ADD = "@cart/ADD"
+export const REMOVE = "@cart/REMOVE"
