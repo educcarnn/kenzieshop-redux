@@ -8,7 +8,6 @@ function TotalBuy({setMessage}) {
     (acumulador, item) => Number(acumulador) + Number(item.price),
     0
   );
-  console.log(totalPrice);
 
   if (cartItems.length > 0) {
     return (
@@ -18,9 +17,10 @@ function TotalBuy({setMessage}) {
       </div>
     );
   }
+
   return (
     <div>
-      <div>Adicione itens novamente no seu carrinho</div>
+      <div>Adicione itens ao seu carrinho</div>
       <Link to="/">Voltar para as compras</Link>
     </div>
   );

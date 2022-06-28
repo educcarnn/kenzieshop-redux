@@ -10,7 +10,7 @@ function Buy() {
     return (
       <li key={products.id}>
         <span>{products.name}</span>
-        <span>{products.price}</span>
+        <span>{products.price.toFixed(2)}</span>
         <img src={products.image} alt={products.image}></img>
         <button onClick={() => dispatch(add(products))} >Adicione ao carrinho</button>
       </li>
