@@ -1,7 +1,8 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { BuyInfos } from "./style";
 
-function TotalBuy({setMessage}) {
+function TotalBuy({ setMessage }) {
   const cartItems = useSelector(({ cart }) => cart);
 
   const totalPrice = cartItems.reduce(
@@ -11,10 +12,11 @@ function TotalBuy({setMessage}) {
 
   if (cartItems.length > 0) {
     return (
-      <div>
+      <BuyInfos>
+        <span>Itens {cartItems.length}</span>
         <span>${totalPrice.toFixed(2)}</span>
         <button onClick={() => setMessage(true)}>Finalizar compra</button>
-      </div>
+      </BuyInfos>
     );
   }
 

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { add } from "../../store/Modules/cart/actions";
+import { ItensLi } from "./style";
 
 function Buy() {
   const products = useSelector(({products}) => products);
@@ -8,12 +9,12 @@ function Buy() {
   const items = (products) => {
 
     return (
-      <li key={products.id}>
+      <ItensLi key={products.id}>
         <span>{products.name}</span>
-        <span>{products.price.toFixed(2)}</span>
+        <span>${products.price.toFixed(2)}</span>
         <img src={products.image} alt={products.image}></img>
-        <button onClick={() => dispatch(add(products))} >Adicione ao carrinho</button>
-      </li>
+        <button onClick={() => dispatch(add(products))} className='button'>Adicione ao carrinho</button>
+      </ItensLi>
     );
   };
 

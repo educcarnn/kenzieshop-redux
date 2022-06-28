@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div>
         <ToastContainer
         position="top-right"
         autoClose={1200}
@@ -23,7 +23,7 @@ function App() {
         <ToastContainer />
         <GlobalStyle/>
         <Routes/>
-      </header>
+      </div>
     </div>
   );
 }

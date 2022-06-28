@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
 import { useHistory } from "react-router-dom";
+import { HeaderStyle } from "./style";
 
 function Header(){
     let history = useHistory();
@@ -11,11 +12,11 @@ function Header(){
     const carts = useSelector(({cart}) => cart);
 
     return (
-        <div>
-                <h2>Kenzie Shop</h2>
-                 <span>{carts.length}</span>
-                <button onClick={handleClick}>Ir para carrinho</button>
-        </div>
+        <HeaderStyle>
+                <h2 className="name">Kenzie Shop</h2>
+                 <span>Quantidade: {carts.length}</span>
+                <button onClick={handleClick} className="buttonMove">Ir para carrinho</button>
+        </HeaderStyle>
     
     )
 }
