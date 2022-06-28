@@ -1,13 +1,18 @@
-import { products } from "../../services";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { add } from "../../store/Modules/cart/actions";
 
 function Buy() {
-  const items = (products) => {
+  const products = useSelector(({products}) => products);
+  const dispatch = useDispatch()
+
+  const items = (products, index) => {
     return (
-      <li>
+      <li key={index}>
         <span>{products.name}</span>
         <span>{products.price}</span>
         <img src={products.image} alt={products.image}></img>
-        <button>Adicione ao carrinho</button>
+        <button onClick={() => dispatch(add(products))}>Adicione ao carrinho</button>
       </li>
     );
   };

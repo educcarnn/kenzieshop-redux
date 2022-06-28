@@ -16,7 +16,13 @@ body{
 }
 button{
     cursor: pointer;
+    border: none;
 }
+button:hover{
+    background-color: brown;
+    color: white;
+}
+
 img{
     width: 20%;
     margin: 0 auto;
