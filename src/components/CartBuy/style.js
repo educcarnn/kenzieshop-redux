@@ -12,6 +12,7 @@ import styled from "styled-components";
 
 export const DivHeader = styled.div`
 
+  padding-bottom: 1rem;
     display: flex;
     background-color: darkblue;
     padding-top: 4rem;
@@ -38,8 +39,6 @@ export const LiItens = styled.li`
     align-content: space-around;
     align-items: center;
     gap: 20%;
-
-    /* border: 1px solid black; */
     margin-top: 2rem;
 `
 
