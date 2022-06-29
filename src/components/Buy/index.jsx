@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { add } from "../../store/Modules/cart/actions";
 import { ItensLi } from "./style";
+import { UlBuy } from "./style";
 
 function Buy() {
   const products = useSelector(({products}) => products);
@@ -20,7 +21,7 @@ function Buy() {
 
   return (
     <>
-      <ul>{products.map(items)}</ul>
+      <UlBuy>{products.map(items)}</UlBuy>
     </>
   );
 }

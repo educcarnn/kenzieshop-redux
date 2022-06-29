@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const HeaderStyle = styled.div`
     display: flex;
     background-color: darkblue;
-    padding-top: 1rem;
-    margin-top: -18rem;
+    padding-top: 4rem;
+    margin-top: -3rem;
     width: 100%;
     gap: 27%;
     flex-direction: row;
@@ -23,12 +23,10 @@ export const HeaderStyle = styled.div`
     .name {
         margin-left: 0rem;
     }
-    position: fixed;
+    margin-top: -3rem;
     display: flex;
-    margin-top: -12rem;
     width: 100%;
     gap: 16%;
-    height: -23rem;
     flex-direction: row;
     align-items: center;
   }
