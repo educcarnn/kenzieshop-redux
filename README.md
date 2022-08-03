@@ -1,6 +1,6 @@
 **Loja Redux**
 
-Compre itens e remova do seu carrinho
+Compre itens e remova do seu carrinho. Uso de styled components e Hooks
 
 Link do projeto: https://react-entrega-s3-kenzieshop-educcarnn.vercel.app/
 
